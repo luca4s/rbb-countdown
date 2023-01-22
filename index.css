@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Consolas;
+    src: url(fonts/CONSOLA.TTF);
+}
+body {
+    color: black;
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    background: url(images/static.gif); 
+    background-size: cover;
+}
+span {
+    -webkit-text-stroke: 3px red;
+    font-size: 500%;
+    font-family: Consolas, Calibri;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#static {
+    background-size: cover;
+}
