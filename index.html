@@ -5,10 +5,25 @@
         <link rel="stylesheet" href="index.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript">
+            var static = true;
+            function bool() {
+                if (static == true) {
+                    static = false;
+                    document.getElementById("static").innerHTML = "Static OFF";
+                    document.body.style = "background-color: rgb(144, 144, 144);";
+                } else {
+                    static = true;
+                    document.getElementById("static").innerHTML = "Static ON";
+                    document.body.style = "background: url(images/static.gif); background-size: cover;"
+                };
+            }
+        </script>
     </head>
-    <body>
+    <body style="background: url(images/static.gif);  background-size: cover;">
         <div class="center">
             <span id="time">00:00:00:00</span>
         </div>
+        <button id="static" style="position: absolute; bottom: 0%; right: 0%; margin: 10px; color: white; border-radius: 8px; border: none; background-color: black; opacity: 75%; font-family: Consolas, Calibri;" onclick="bool()">Static ON</button>
     </body>
 </html>
