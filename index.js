@@ -1,4 +1,17 @@
 var finalbattle = 1674936000000;
+function playsound(str) {
+    var audio = null;
+    if (str == "DJ") {
+        audio = new Audio("sounds/dj.mp3");
+    } else if (str == "Sabrina") {
+        audio = new Audio("sounds/sabrina.mp3");
+    } else if (str == "Russo") {
+        audio = new Audio("sounds/russo.mp3");
+    } else if (str == "Duncan") {
+        audio = new Audio(`sounds/duncan/${Math.floor((Math.random() * 8) + 1)}.mp3`);
+    };
+    audio.play();
+};
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = finalbattle - now;

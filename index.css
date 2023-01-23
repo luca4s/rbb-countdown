@@ -20,3 +20,34 @@ span {
 #static {
     background-size: cover;
 }
+
+.secret {
+    position: absolute;
+    width: 10%;
+	height: 10%;
+}
+.secret img {
+    display: none;
+    object-fit: contain;
+    width: 100%;
+	height: 100%;
+}
+.secret:hover img {
+    display: block;
+}
+.dj {
+	left: 77%;
+	top: 88%;
+}
+.russo {
+	left: 8%;
+	top: 9%;
+}
+.sabrina {
+	left: 51%;
+	top: 5%;
+}
+.duncan {
+	left: 31%;
+	top: 76%;
+}
